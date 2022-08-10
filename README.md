@@ -16,7 +16,7 @@ Uses **go** way of designing services (DI) using Hexagonal architecture.
 - Delivery Service: Delivery service responsible for computing **delivery cost** and applies **offer discount** if applicable by using `offer service`
 - Total delivery cost can be computed using method available on **PackageDetails**, so that all computation logic will be at one place (The better way could be have its own service).
 
-
+```txt
 📦 services
  ┣ 📂 delivery_svc
  ┃ ┣ 📜 default_svc.go
@@ -27,27 +27,29 @@ Uses **go** way of designing services (DI) using Hexagonal architecture.
  ┗ 📂 shell_io_svc
  ┃ ┣ 📜 default_svc.go
  ┃ ┗ 📜 shell_io_svc.go
-
+```
 
 ### Models
 
 The domain models
 
+```txt
 📦 models
  ┣ 📜 offers.go
  ┣ 📜 package_details.go
  ┣ 📜 package_stats.go
  ┗ 📜 vehicles.go
-
+```
 
 ### Clients
 
 Write your own client
 
+```txt
 📦 clients
  ┣ 📜 base_client.go
  ┣ 📜 shell_client.go
-
+```
 
 ## Managing Offers
 
@@ -86,10 +88,12 @@ The current implementation calculates discount when all conditions specified for
 
 Validates `offers.json` schema
 
+```txt
  📦scripts
  ┣ 📂 src
  ┣ 📜 package.json
  ┗ 📜 tsconfig.json
+```
 
 ### Validating offers schema
 
@@ -173,8 +177,6 @@ make start
 
 ### Testing
 
-> unit tests
-
 ```bash
 make test
 make coverage
@@ -192,4 +194,3 @@ make lint
 
 - [ ] CI/CD
 - [ ] There scope for improvement interns (bigO - knapsack)
-
