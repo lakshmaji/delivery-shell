@@ -1,0 +1,16 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/node_modules": true,
+        "**/bun.lockb": true,
+        "main": true,
+        "Makefile": true,
+        "coverage.out": true,
+        ".vscode": true
+    }
+}

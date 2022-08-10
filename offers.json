@@ -1,0 +1,75 @@
+[
+    {
+        "code": "OFR001",
+        "discount": 0.01,
+        "conditions": [
+            {
+                "fact": "distance",
+                "operator": "lessThan",
+                "value": 200
+            },
+            {
+                "fact": "weight",
+                "operator": "greaterThanOrEqual",
+                "value": 70
+            },
+            {
+                "fact": "weight",
+                "operator": "lessThanOrEqual",
+                "value": 200
+            }
+        ]
+    },
+    {
+        "code": "OFR002",
+        "discount": 0.07,
+        "conditions": [
+            {
+                "fact":"distance",
+                "operator":"greaterThanOrEqual",
+                "value":50
+            },
+            {
+                "fact":"distance",
+                "operator":"lessThanOrEqual",
+                "value":150
+            },
+            {
+                "fact": "weight",
+                "operator": "greaterThanOrEqual",
+                "value": 100
+            },
+            {
+                "fact": "weight",
+                "operator": "lessThanOrEqual",
+                "value": 250
+            }
+        ]
+    },
+    {
+        "code": "OFR003",
+        "discount": 0.05,
+        "conditions": [
+            {
+                "fact": "distance",
+                "operator": "greaterThanOrEqual",
+                "value": 50
+            },
+            {
+                "fact": "distance",
+                "operator": "lessThanOrEqual",
+                "value": 250
+            },
+            {
+                "fact": "weight",
+                "operator": "greaterThanOrEqual",
+                "value": 10
+            },
+            {
+                "fact": "weight",
+                "operator": "lessThanOrEqual",
+                "value": 150
+            }
+        ]
+    }
+]
